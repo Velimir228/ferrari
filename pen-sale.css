@@ -1,0 +1,124 @@
+html {
+  --columns-gap: 25px;
+  --columns-count: 1;
+  --pen-background-color: rgb(238,237,240);
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    --columns-gap: 50px;
+    --columns-count: 2;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  html {
+    --columns-gap: 75px;
+    --columns-count: 3;
+  }
+}
+
+.shop-header {
+  text-align: center;
+  margin-block: 50px;
+  text-transform: uppercase;
+}
+
+.shop-offers {
+  --card-width: calc(100vw / var(--columns-count) - var(--columns-gap) * 2);
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(var(--columns-count), 1fr);
+  column-gap: var(--columns-gap);
+}
+
+.shop-item {
+  box-sizing: border-box;
+  width: var(--card-width);
+  height: 550px;
+}
+
+.shop-item__image {
+  min-width: 220px;
+  height: 350px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pen-background-color);
+}
+
+.shop-item__description {
+  font-size: 20px;
+}
+
+.pen-1 {
+  background-image: url(./pen-1-1.jpg);
+}
+
+.pen-1:hover {
+  background-image: url(./pen-1-2.jpg);
+}
+
+.pen-2 {
+  background-image: url(./pen-2-1.jpg);
+}
+
+.pen-2:hover {
+  background-image: url(./pen-2-2.jpg);
+}
+
+.pen-3 {
+  background-image: url(./pen-3-1.jpg);
+}
+
+.pen-3:hover {
+  background-image: url(./pen-3-2.jpg);
+}
+
+.pen-4 {
+  background-image: url(./pen-4-1.jpg);
+}
+
+.pen-4:hover {
+  background-image: url(./pen-4-2.jpg);
+}
+
+.pen-5 {
+  background-image: url(./pen-5-1.jpg);
+}
+
+.pen-5:hover {
+  background-image: url(./pen-5-2.jpg);
+}
+
+.pen-6 {
+  background-image: url(./pen-6-1.jpg);
+}
+
+.pen-6:hover {
+  background-image: url(./pen-6-2.jpg);
+}
+
+.table-container {
+  margin-bottom: 50px;
+}
+
+.table-container > h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.comparison-table {
+  box-sizing: border-box;
+  border: 2px solid black;
+  display: block;
+  width: fit-content;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}

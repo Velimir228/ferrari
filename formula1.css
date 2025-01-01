@@ -1,0 +1,23 @@
+.ferraris-history {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1020px) {
+  .ferraris-history {
+    width: 90%;
+  }
+}
+
+.lists-container {
+  padding-inline: 50px;
+  margin-bottom: 50px;
+}
+
+.lists-header {
+  font-size: 24px;
+}
+
+li > ul {
+  margin-left: 30px;
+}
