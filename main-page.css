@@ -68,3 +68,7 @@ h2 + p {
   object-fit: cover;
   display: block;
 }
+
+.move-left {
+  object-position: 100%;
+}
